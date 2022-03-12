@@ -1,5 +1,8 @@
 package pacote_dominio;
-//IMCOMPLETO
+
+
+
+
 public class BootcampConcluido extends Bootcamp{
 	
 	private String nomeDev;
@@ -17,7 +20,7 @@ public class BootcampConcluido extends Bootcamp{
 	        return "{" +
 	                "nome='" + getNome() + '\'' +
 	                ", descricao='" + getDescricao() + '\'' +
-	                ", Data de término=" + getDataFinal() + '\'' +
+	                ", Data de inicio=" + getDataInicial() + '\'' +
 	                ", Data de término=" + getDataFinal() + '\'' +
 	                ", Dev inscrito=" + getNomeDev() + '\'' +
 	               // ", cargaHoraria=" + cargaHoraria +

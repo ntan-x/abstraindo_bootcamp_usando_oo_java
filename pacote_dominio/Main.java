@@ -22,14 +22,16 @@ public class Main {
 	        /*System.out.println(curso1);
 	        System.out.println(curso2);
 	        System.out.println(mentoria);*/
-
+	        
 	        Bootcamp bootcamp = new Bootcamp();
 	        bootcamp.setNome("Bootcamp Java Developer");
 	        bootcamp.setDescricao("Descrição Bootcamp Java Developer");
 	        bootcamp.getConteudos().add(curso1);
 	        bootcamp.getConteudos().add(curso2);
 	        bootcamp.getConteudos().add(mentoria);
-
+	        
+	       BootcampConcluido bootcampConcluido = new BootcampConcluido();
+	       
 	        Dev devCamila = new Dev();
 	        devCamila.setNome("Camila");
 	        devCamila.inscreverBootcamp(bootcamp);
@@ -44,11 +46,8 @@ public class Main {
 	        devJoao.inscreverBootcamp(bootcamp);
 	       
 	        devJoao.progredir();
-	        
-	        
-	
+	         System.out.println( bootcampConcluido);
 	       
-	        System.out.println( bootcamp.getConteudos());
 	    }
 
 	}
